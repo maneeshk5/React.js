@@ -4,10 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"></script>
+
+    <!--&lt;!&ndash;<script src="vendor/babel-standalone.js"></script>-->
+      <!--manifest.json provides metadata used when your web app is added to the-->
+      <!--homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/-->
+    <!--&ndash;&gt;-->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <!--<script src="vendor/babel-standalone.js"></script>-->
@@ -25,12 +30,14 @@
   </head>
   <body>
 
+
     <div id="root"></div>
 
     <div class="main ui text container">
       <h1 class="ui dividing centered header">Popular Products</h1>
       <div id="content2"></div>
     </div>
+    <div id="proContent"></div>
     <div id="content"></div>
     <div id="hContent"></div>
 
