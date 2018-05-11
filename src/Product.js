@@ -1,4 +1,5 @@
 import React from "react";
+import FaIconPack from 'react-icons/lib/fa'
 
 class Product extends React.Component {
 
@@ -6,7 +7,7 @@ class Product extends React.Component {
         super(props);
         this.handleUpVote = this.handleUpVote.bind(this);
     }
-    handleUpVote(){
+    handleUpVote = () => {
         this.props.onVote(this.props.id);
     }
 
@@ -15,7 +16,7 @@ class Product extends React.Component {
             <div className='middle aligned content'>
                 <div className='header'>
                     <a onClick={this.handleUpVote}>
-                        <i className='large caret up icon' />
+                        <i className='FaAngleDoubleUp' />
                     </a>
                     {this.props.votes}
                 </div>
